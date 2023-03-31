@@ -21,6 +21,8 @@ describe("test suite description - Hidden Button", () => {
     });
 
     it('Automatically scroll the button into a visible area', async () => {
+        await browser.url('http://uitestingplayground.com/scrollbars');
+        //resolved, pending, rejected
 
         // Find the scrollable element
         const divScrollable = $('.container div[style*="height:150px;overflow-y: scroll;width:300px;overflow-x:scroll"]');
